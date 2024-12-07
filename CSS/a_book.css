@@ -1,0 +1,733 @@
+nav, .topbar {
+  background: transparent !important;
+}
+
+.outTable {
+  position: relative;
+  border-radius: 15px;
+  background: #36393F;
+  padding: 2em;
+  height: auto;
+  width: auto;
+  margin-right: 15pt;
+  z-index: 999;
+}
+.outTable .shadow {
+  display: none;
+  border-radius: 15px;
+  background: #0000004d;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.outTable .shadow.active {
+  display: block;
+}
+.outTable .new {
+  z-index: 999;
+  font-family: "Prompt", sans-serif;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.outTable .new.active {
+  display: block;
+}
+.outTable .new .shit {
+  display: flex;
+  width: 1200px;
+  height: 500px;
+}
+.outTable .new .shit .shit-l, .outTable .new .shit .shit-r {
+  background: #36393F;
+  box-shadow: 0 0 15px #36393F;
+}
+.outTable .new .shit .shit-l {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 0.5em;
+  border-radius: 15px 0 0 15px;
+  min-width: 200px;
+}
+.outTable .new .shit .shit-l.sec {
+  width: 350px;
+}
+.outTable .new .shit .shit-l.sec .f-shit-l .f-l {
+  width: 70%;
+}
+.outTable .new .shit .shit-l.sec .f-shit-l .f-r {
+  width: 30%;
+}
+.outTable .new .shit .shit-l a {
+  text-decoration: none;
+}
+.outTable .new .shit .shit-l a .f-shit-l {
+  display: flex;
+  width: 100%;
+  height: 55px;
+  margin-bottom: 0.6em;
+}
+.outTable .new .shit .shit-l a .f-shit-l .f-l {
+  width: 45%;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 5px 0 0 5px;
+}
+.outTable .new .shit .shit-l a .f-shit-l .f-r {
+  width: 55%;
+  background: #86b6ff;
+  color: #ffffff;
+  border-radius: 0 5px 5px 0;
+}
+.outTable .new .shit .shit-l a .f-shit-l .f-r, .outTable .new .shit .shit-l a .f-shit-l .f-l {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.outTable .new .shit .shit-l a:hover .f-l {
+  background: #dfdfdf;
+}
+.outTable .new .shit .shit-l a:hover .f-r {
+  background: #749cda;
+}
+.outTable .new .shit .shit-l::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #36393F;
+}
+.outTable .new .shit .shit-l::-webkit-scrollbar {
+  width: 5px;
+  background-color: #36393F;
+}
+.outTable .new .shit .shit-l::-webkit-scrollbar-thumb {
+  background-color: #4d515a;
+}
+.outTable .new .shit .shit-l::-webkit-scrollbar-thumb:hover {
+  background-color: #3a3e47;
+}
+.outTable .new .shit .shit-r {
+  padding: 1em;
+  border-radius: 0 15px 15px 0;
+  width: 100%;
+}
+.outTable .new .shit .shit-r .f-shit-l {
+  display: flex;
+  width: 200px;
+  height: 55px;
+  margin-bottom: 0.6em;
+}
+.outTable .new .shit .shit-r .f-shit-l .f-l {
+  width: 45%;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 5px 0 0 5px;
+}
+.outTable .new .shit .shit-r .f-shit-l .f-r {
+  width: 55%;
+  background: #86b6ff;
+  color: #ffffff;
+  border-radius: 0 5px 5px 0;
+}
+.outTable .new .shit .shit-r .f-shit-l .f-r, .outTable .new .shit .shit-r .f-shit-l .f-l {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.outTable .new .shit .shit-r .warp-table {
+  overflow-y: scroll;
+  height: 80%;
+  padding-right: 5px;
+}
+.outTable .new .shit .shit-r .warp-table table {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.outTable .new .shit .shit-r .warp-table table thead {
+  border-bottom: 1px solid #ffffff;
+  background: #ffffff;
+  color: #000000;
+}
+.outTable .new .shit .shit-r .warp-table table tbody td {
+  color: #ffffff;
+}
+.outTable .new .shit .shit-r .warp-table table td {
+  padding: 8px 0;
+}
+.outTable .new .shit .shit-r .warp-table::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #36393F;
+}
+.outTable .new .shit .shit-r .warp-table::-webkit-scrollbar {
+  width: 5px;
+  background-color: #36393F;
+}
+.outTable .new .shit .shit-r .warp-table::-webkit-scrollbar-thumb {
+  background-color: #4d515a;
+}
+.outTable .new .shit .shit-r .warp-table::-webkit-scrollbar-thumb:hover {
+  background-color: #3a3e47;
+}
+.outTable .new .shit h4 {
+  margin-bottom: 0.5em;
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 5px;
+}
+.outTable .jong {
+  z-index: 999;
+  font-family: "Prompt", sans-serif;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.outTable .jong.active {
+  display: block;
+}
+.outTable .jong form {
+  background: #36393F;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #36393F;
+}
+.outTable .jong form label {
+  color: #ffffff;
+  display: inline-block;
+  width: 100px;
+}
+.outTable .jong form input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px 0;
+}
+.outTable .jong form button {
+  margin-top: 20px;
+  margin-left: auto;
+  font-size: 15px;
+  display: flex;
+  height: 40px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.outTable .jong form button {
+  font-family: "Prompt", sans-serif;
+  border: 2px solid #54FF87;
+  color: #54FF87;
+  cursor: pointer;
+  background: transparent;
+}
+.outTable .jong form button:hover {
+  background: #54FF87;
+  color: #ffffff;
+  box-shadow: 0 0 10px #54FF87;
+}
+.outTable .addMenu {
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-family: "Prompt", sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 5px;
+  height: auto;
+  box-shadow: 2px -2px 2px #5775a1;
+  font-size: 13pt;
+  border: none;
+  cursor: pointer;
+  background: #86b6ff;
+  transition: 0.3s ease;
+}
+.outTable .addMenu:hover {
+  background: #698ec5;
+}
+.outTable table {
+  font-family: "Prompt", sans-serif;
+  text-align: center;
+}
+.outTable table thead {
+  font-weight: bolder;
+}
+.outTable table tbody tr td a {
+  text-decoration: none;
+  color: #000000;
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.outTable table tbody tr td a:hover {
+  background: #c9c9c9;
+}
+.outTable .add, .outTable .edit {
+  z-index: 999;
+  font-family: "Prompt", sans-serif;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.outTable .add form, .outTable .edit form {
+  display: flex;
+}
+.outTable .add form .img, .outTable .edit form .img {
+  margin-right: 5pt;
+  width: 270px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.outTable .add form .img img, .outTable .edit form .img img {
+  height: 310px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #000000;
+  width: 100%;
+  background: #6d6d6d;
+}
+.outTable .add form .img input, .outTable .edit form .img input {
+  margin-top: 5px;
+}
+.outTable .add form .img#memba, .outTable .edit form .img#memba {
+  width: 200px !important;
+}
+.outTable .add form .img#memba img, .outTable .edit form .img#memba img {
+  height: 200px !important;
+}
+.outTable .add form .cata-del, .outTable .edit form .cata-del {
+  color: #ff4d4d;
+  background: none;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #ff4d4d;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.outTable .add form .cata-del:hover, .outTable .edit form .cata-del:hover {
+  background: #ff4d4d;
+  color: #ffffff;
+}
+.outTable .add form .info, .outTable .edit form .info {
+  width: 500px;
+}
+.outTable .add form .info .form, .outTable .edit form .info .form {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+.outTable .add form .info .form input.text, .outTable .edit form .info .form input.text {
+  border: none;
+  padding: 5px 10px;
+  border-bottom: 1px solid #6d6d6d;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.outTable .add form .info .form label, .outTable .edit form .info .form label {
+  margin-bottom: 5px;
+}
+.outTable .add form .info .form textarea, .outTable .edit form .info .form textarea {
+  resize: none;
+  border: 1px solid #6d6d6d;
+  outline: none;
+}
+.outTable .add form .info .form .selt, .outTable .edit form .info .form .selt {
+  margin-top: 0.5em;
+}
+.outTable .add form .info .form .selt input, .outTable .edit form .info .form .selt input {
+  width: 100px;
+  padding: 5px;
+  text-align: right;
+}
+.outTable .add form .info .form .selt select, .outTable .edit form .info .form .selt select {
+  font-size: 15px;
+  padding: 5px 10px;
+}
+.outTable .add form .info .form button, .outTable .edit form .info .form button {
+  margin-top: 10pt;
+  margin-left: auto;
+  border: 1px solid #6d6d6d;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4rem;
+  padding: 5px 50px;
+  box-shadow: 3px -3px 0 #0000003f;
+  transform: translate(-3px, 3px);
+  transition: 0.16s ease;
+}
+.outTable .add form .info .form button:hover, .outTable .edit form .info .form button:hover {
+  background: #bdbdbd;
+}
+.outTable .add form .info .form button:active, .outTable .edit form .info .form button:active {
+  transform: translate(3px, -3px);
+  box-shadow: none;
+}
+.outTable .add form .info#cata, .outTable .edit form .info#cata {
+  margin-top: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.outTable .add form .info#cata .selt select, .outTable .edit form .info#cata .selt select {
+  font-size: 15px;
+  padding: 5px 10px;
+}
+.outTable .add form .img, .outTable .add form .info, .outTable .edit form .img, .outTable .edit form .info {
+  padding: 25pt 15pt;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 1px #ffffff;
+}
+.outTable .add.active, .outTable .edit.active {
+  display: block;
+}
+.outTable .remove {
+  z-index: 999;
+  font-family: "Prompt", sans-serif;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.outTable .remove .box-r {
+  width: 100%;
+  background: #ffffff;
+  padding: 1em;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+.outTable .remove .box-r h1 {
+  font-size: 21px;
+}
+.outTable .remove .box-r .btn-r {
+  margin-top: 20px;
+}
+.outTable .remove .box-r .btn-r form {
+  display: flex;
+  width: 100%;
+}
+.outTable .remove .box-r .btn-r form button {
+  width: 100%;
+  border-radius: 4rem;
+  background: #a0a0a0;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 10px 0;
+  border: none;
+  font-size: 21px;
+}
+.outTable .remove .box-r .btn-r form button:hover {
+  background: #7e7e7e;
+}
+.outTable .remove.active {
+  display: flex;
+}
+.outTable .list {
+  flex-direction: column;
+  z-index: 999;
+  font-family: "Prompt", sans-serif;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.outTable .list.active {
+  display: flex;
+}
+.outTable .list .party, .outTable .list .booked, .outTable .list .booking {
+  background: #36393F;
+  border-radius: 25px;
+  padding: 2em;
+}
+.outTable .list .party {
+  margin-bottom: 1em;
+}
+.outTable .list .party#book {
+  width: 1000px;
+}
+.outTable .list .party#mem {
+  width: 1400px;
+}
+.outTable .list .party .book-name {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ffffff;
+}
+.outTable .list .party .book-name div {
+  color: #ffffff;
+}
+.outTable .list .party .book-name div h1 {
+  font-size: 21px;
+}
+.outTable .list .party .book-name div p {
+  font-size: 16px;
+  margin-left: 5px;
+}
+.outTable .list .party .book-name div h1, .outTable .list .party .book-name div p {
+  display: inline-block;
+}
+.outTable .list .party .book-name .rem {
+  display: flex;
+}
+.outTable .list .party .book-name .rem .plus {
+  margin-left: 5px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 4rem;
+  height: 20px;
+  width: 20px;
+  background: #6d6d6d;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.outTable .list .party .book-name .rem .plus:hover {
+  background: #7e7e7e;
+}
+.outTable .list .party .book-name .rem .plus i {
+  margin: 3px;
+  transition: 0.3s ease;
+}
+.outTable .list .party .book-name .rem .plus i:hover {
+  color: #8fbcff;
+}
+.outTable .list .party .book-name .rem .plus input {
+  background: none;
+  border: none;
+  color: #ffffff;
+  width: 100%;
+  padding-left: 5px;
+}
+.outTable .list .party .book-name .rem .plus.active {
+  width: 100px;
+}
+.outTable .list .party .book-name .rem .plus button {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  height: 100%;
+  color: #8fbcff;
+}
+.outTable .list .party .book-name .rem .plus button:hover {
+  background: #636363;
+}
+.outTable .list .party .book-name .rem .plus.active button {
+  display: block;
+}
+.outTable .list .party .book-name .rem .plus.active i {
+  color: #ff4d4d;
+  transform: rotateZ(45deg);
+}
+.outTable .list .party .num-book {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+.outTable .list .party .num-book .sum-b {
+  margin: 1% 0.8%;
+  height: 50px;
+  align-items: center;
+  font-size: 18px;
+  text-decoration: none;
+  flex: 0 0 31.599%;
+  max-width: 31.599%;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background: #4e5058;
+  transition: 0.3s ease;
+}
+.outTable .list .party .num-book .sum-b:hover {
+  background: #2C2E33;
+}
+.outTable .list .party .num-book .sum-b a {
+  text-decoration: none;
+  color: #000000;
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.outTable .list .party .num-book .sum-b a:hover {
+  background: #c9c9c9;
+}
+.outTable .list .party .num-book::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+.outTable .list .party .num-book::-webkit-scrollbar {
+  width: 10px;
+  background-color: #999999;
+}
+.outTable .list .party .num-book::-webkit-scrollbar-thumb {
+  background-color: #616161;
+}
+.outTable .list .party .num-book::-webkit-scrollbar-thumb:hover {
+  background-color: #7e7e7e;
+}
+.outTable .list .booked {
+  display: none;
+  width: 100%;
+  align-items: center;
+}
+.outTable .list .booked.active {
+  display: flex;
+}
+.outTable .list .booked table {
+  color: #ffffff;
+  width: 100%;
+}
+.outTable .list .booked table thead {
+  font-size: 16px;
+  height: 30px;
+}
+.outTable .list .booked table tr {
+  width: 100%;
+  text-align: center;
+}
+.outTable .list .booked .switch {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.outTable .list .booked .switch a {
+  font-size: 15px;
+  display: flex;
+  height: 40px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.outTable .list .booked .switch a.red {
+  border: 2px solid #ff4d4d;
+  color: #ff5f5f;
+}
+.outTable .list .booked .switch a.red:hover {
+  background: #ff4d4d;
+  color: #ffffff;
+  box-shadow: 0 0 10px #ff4d4d;
+}
+.outTable .list .booking {
+  display: none;
+}
+.outTable .list .booking form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.outTable .list .booking form label {
+  color: #ffffff;
+}
+.outTable .list .booking form input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+.outTable .list .booking form .switch {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+}
+.outTable .list .booking form .switch a, .outTable .list .booking form .switch button.green {
+  font-size: 15px;
+  display: flex;
+  height: 40px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.outTable .list .booking form .switch a.red {
+  border: 2px solid #ff4d4d;
+  color: #ff5f5f;
+}
+.outTable .list .booking form .switch a.red:hover {
+  background: #ff4d4d;
+  color: #ffffff;
+  box-shadow: 0 0 10px #ff4d4d;
+}
+.outTable .list .booking form .switch button.green {
+  font-family: "Prompt", sans-serif;
+  border: 2px solid #54FF87;
+  color: #54FF87;
+  cursor: pointer;
+  background: transparent;
+}
+.outTable .list .booking form .switch button.green:hover {
+  background: #54FF87;
+  color: #ffffff;
+  box-shadow: 0 0 10px #54FF87;
+}
+.outTable .list .booking.active {
+  display: flex;
+}
+
+.btn-box {
+  display: flex;
+}
+.btn-box button, .btn-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.fastform {
+  display: flex;
+}
+.fastform .ins {
+  height: 100%;
+}
+.fastform .ins label {
+  color: #ffffff;
+}
+.fastform .ins input {
+  height: auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.fastform button {
+  padding: 10px 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: 2px -2px 2px #5775a1;
+  transition: 0.3s ease;
+  font-size: 13pt;
+  border: none;
+  cursor: pointer;
+  background: #86b6ff;
+}
+.fastform button:hover {
+  background: #698ec5;
+}/*# sourceMappingURL=a_book.css.map */

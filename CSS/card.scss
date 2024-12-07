@@ -1,0 +1,58 @@
+@import 'reset';
+
+body {
+    background: #202225;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    form {
+        width: fit-content;
+        border-radius: 1em;
+        background: #3b3e44;
+        display: block;
+        padding: 1em;
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 0.5em;
+        }
+        .img {
+            width: 200px;
+            height: auto;
+            img {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+                padding-bottom: 1em;
+            }
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+        input {
+            display: block;
+            width: 100%;
+        }
+    }
+    button {
+        display: block;
+        margin: 1em auto;
+        text-align: center;
+        border-radius: 1em;
+        padding: 5px 10px;
+        cursor: pointer;
+        &:hover {
+            background: #bdbdbd;
+        }
+    }
+}

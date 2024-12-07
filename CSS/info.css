@@ -1,0 +1,436 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* scrollbar */
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #999999;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #616161;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #a50000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+}
+
+.main-content {
+  padding: 20px;
+  background: #36393F;
+  border-radius: 15px;
+  margin-right: 1em;
+  min-height: 90vh;
+}
+
+/* light */
+/* dark */
+/* general */
+.info {
+  width: 100%;
+  padding: 30pt 10pt;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+.info .detail {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: #202225;
+  border-radius: 7px;
+  padding: 40pt;
+  justify-content: space-between;
+}
+.info .detail .text {
+  width: 100%;
+  display: flex;
+}
+.info .detail .text .image {
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.info .detail .text .image img {
+  max-width: 100%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.info .detail .text .t-tin {
+  padding: 0 3%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.info .detail .text .t-tin h1 {
+  font-size: 48px;
+  color: #ffffff;
+}
+.info .detail .text .t-tin h2 {
+  color: #F64E60;
+  font-size: 21px;
+  padding: 20px 0;
+}
+.info .detail .text .t-tin p {
+  color: #ffffff;
+  line-height: 1.5;
+}
+.info .detail .text .t-num {
+  border-bottom: 1px solid #b0b7c5;
+  padding: 10px 0;
+  margin-top: auto;
+}
+.info .detail .text .t-num table {
+  width: 100%;
+}
+.info .detail .text .t-num table thead {
+  font-size: 14px;
+  color: #6f7685;
+  font-weight: bold;
+}
+.info .detail .text .t-num table thead td {
+  padding-bottom: 5px;
+}
+.info .detail .text .t-num table tbody {
+  font-size: 21px;
+  color: #ffffff;
+}
+.info .detail .text .t-num table td {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.info .detail .another {
+  min-width: 25%;
+}
+.info .detail .another .data-book {
+  background: #383B41;
+  border-radius: 1em;
+  padding: 1em;
+  color: #ffffff;
+  margin-bottom: 20pt;
+}
+.info .detail .another .data-book h1 {
+  font-size: 30px;
+}
+.info .detail .another .data-book h2 {
+  padding: 10px 0;
+  font-size: 21px;
+}
+.info .detail .another .data-book ul li {
+  font-size: 17px;
+  line-height: 1.3;
+}
+.info .detail .another .data-book ul li span.red {
+  color: #F64E60;
+}
+.info .reccoment {
+  margin-top: 40pt;
+  background: #202225;
+  border-radius: 7px;
+  padding: 20pt;
+}
+.info .reccoment h1 {
+  color: #ffffff;
+  margin-bottom: 20pt;
+}
+.info .reccoment .rec {
+  display: flex;
+  flex-wrap: wrap;
+}
+.info .reccoment .rec li {
+  flex: 0 0 15.337%;
+  max-width: 15.337%;
+  margin: 0.66%;
+  border-radius: 7px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #4c5058;
+}
+.info .reccoment .rec li a {
+  text-decoration: none;
+}
+.info .reccoment .rec li a .image-rec img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  transition: 0.3s ease;
+}
+.info .reccoment .rec li a .detail-rec {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #4c5058;
+  border-radius: 0 0 15px 15px;
+  padding: 5pt;
+}
+.info .reccoment .rec li a .detail-rec h2 {
+  color: #ffffff;
+  font-size: 17px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  max-height: 18px;
+  padding-bottom: 5px;
+}
+.info .reccoment .rec li a .detail-rec p {
+  color: #bdbdbd;
+  font-size: 14px;
+  max-height: 50px;
+  line-height: 1.2;
+  overflow: hidden;
+  color: #BEBEBE;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.info .reccoment .rec li a:hover .image-rec img {
+  transform: scale(1.1);
+}
+.info .reccoment .rec li a:hover .detail-rec {
+  background: #3b3e44;
+}
+.info .reccoment .rec li:hover {
+  background: #3b3e44;
+}
+
+@media screen and (max-width: 1844px) {
+  .detail {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background: #202225;
+    border-radius: 7px;
+    padding: 40pt;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .detail .text {
+    width: auto;
+    display: flex;
+  }
+  .detail .another {
+    margin-top: 20pt;
+    min-width: 25%;
+  }
+}
+@media screen and (max-width: 910px) {
+  .detail {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background: #202225;
+    border-radius: 7px;
+    padding: 40pt;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .detail .text {
+    width: auto;
+    display: flex;
+  }
+  .detail .text .image {
+    min-width: 200px !important;
+    display: flex;
+    justify-content: center;
+  }
+  .detail .text .image img {
+    max-width: 100%;
+    max-height: 300px !important;
+    width: auto;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .detail .text .t-tin {
+    padding: 0 3%;
+  }
+  .detail .text .t-tin h1 {
+    font-size: 42px !important;
+    color: #ffffff;
+  }
+  .detail .text .t-tin h2 {
+    color: #F64E60;
+    font-size: 17px !important;
+    padding: 20px 0;
+  }
+  .detail .text .t-tin p {
+    color: #ffffff;
+    font-size: 15px !important;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 620px) {
+  .text {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    min-width: 300px !important;
+    display: flex;
+    justify-content: center;
+  }
+  .image img {
+    max-width: 100%;
+    max-height: 400px !important;
+    width: auto;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .t-tin {
+    padding: 0 0% !important;
+    width: 100%;
+  }
+  .t-tin h1 {
+    font-size: 42px !important;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .t-tin p {
+    text-align: justify !important;
+  }
+
+  .t-num table tbody {
+    font-size: 18px !important;
+  }
+
+  .rec {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .rec li {
+    flex: 0 0 100% !important;
+    max-width: 48.65% !important;
+    margin: 0.66% !important;
+    border-radius: 7px;
+  }
+  .rec li a {
+    text-decoration: none;
+  }
+  .rec li a .image-rec {
+    overflow: hidden;
+  }
+  .rec li a .image-rec img {
+    max-width: 100%;
+    max-height: 100% !important;
+    height: auto;
+    width: auto;
+    border-radius: 15px 15px 0 0;
+    transition: 0.3s ease;
+  }
+  .rec li a .detail-rec {
+    background: #4c5058;
+    border-radius: 0 0 15px 15px;
+    padding: 5pt;
+  }
+  .rec li a .detail-rec h2 {
+    color: #ffffff;
+    font-size: 17px;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    max-height: 19px;
+    padding-bottom: 5px;
+  }
+  .rec li a .detail-rec p {
+    color: #bdbdbd;
+    font-size: 14px;
+    max-height: 50px;
+    line-height: 1.2;
+    overflow: hidden;
+    color: #BEBEBE;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .rec li a:hover .image-rec img {
+    transform: scale(1.1);
+  }
+  .rec li a:hover .detail-rec {
+    background: #3b3e44;
+  }
+}/*# sourceMappingURL=info.css.map */

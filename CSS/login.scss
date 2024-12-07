@@ -1,0 +1,29 @@
+@import 'reset';
+
+/*main detail*/
+
+$light: #ffffff;
+$dark: #000000;
+.box-log { width: 400px; display: flex; flex-direction: column; margin: auto; text-align: center; color: #ffffff; margin-top: 50px; font-family: 'Poppins', Helvetica, sans-serif;
+    h1 {font-size: 45px; margin-bottom: 15px;}
+    h2 {font-size: 25px; margin-bottom: 20px;}
+    .login-f { font-family: 'Sarabun', sans-serif; background: #ffffff; color: #000000; border-radius: 10px; text-align: left; padding: 1em;
+        .top-l { display: flex; align-items: center;
+            img {width: 60px; height: 60px; margin-right: 10px;}
+            .text-t-l {
+                h3 {font-size: 23px; padding-bottom: 7px; font-weight: bold;}
+                h4 {color: #374047;}
+            }
+        }
+        form { margin-top: 25px; position: relative; padding-bottom: 50px;
+            input.lo {color: #ffffff; width: 100%; margin: 5px 0; border: none; background: #a1a1a1; border-radius: 10px; padding: 10px 5px;}
+            button {position: absolute; font-size: 15px; bottom: 0; right: 0; border: none; border-radius: 5px; padding: 10px 15px; color: #ffffff; background: #B50000; cursor: pointer;
+                &:hover {background: #850000;}
+            }
+        }
+        .explain {
+            h4 {margin: 10px 0 5px 0; font-weight: bolder;}
+            p {line-height: 1.4;}
+        }
+    }
+}

@@ -1,0 +1,201 @@
+html {
+  font-size: calc(60% + 0.8vmin);
+}
+
+body {
+  background: #202225;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+section nav {
+  position: fixed;
+  z-index: 99;
+  width: 260px;
+  height: 100vh;
+  background: #202225;
+  transition: 0.6s ease;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+section nav.active {
+  transform: translateX(-100%);
+}
+
+section nav .profile {
+  display: flex;
+  padding: 15px 7px;
+}
+
+section nav .profile img {
+  display: block;
+  width: 80px;
+  height: 100px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 0 #bdbdbd;
+}
+
+section nav .profile .title {
+  padding-left: 10pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section nav .profile .title h1 {
+  color: #ffffff;
+  font-size: 13pt;
+}
+
+section nav .profile .title .point {
+  margin-top: 10px;
+}
+
+section nav .profile .title .point p {
+  display: inline-block;
+  color: #d6d6d6;
+}
+
+section nav .s-menu {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+}
+
+section nav .s-menu button {
+  background: none;
+  color: #ffffff;
+  border: none;
+  font-size: 1.3em;
+}
+
+section nav .menu {
+  padding: 0 15px;
+}
+
+section nav .menu ul {
+  padding: 10px 0;
+}
+
+section nav .menu ul h1 {
+  color: #ff8383;
+  padding-bottom: 10px;
+}
+
+section nav .menu ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+section nav .menu ul a li {
+  position: relative;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.266s ease;
+}
+
+section nav .menu ul a li.hold {
+  background: #3B4148;
+}
+
+section nav .menu ul a li:hover {
+  background: #3b4148;
+}
+
+section nav .menu ul.secondary a li:hover {
+  background: none;
+}
+
+section nav .menu ul a li p {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+section nav .menu ul.main {
+  border-bottom: 1px solid #ffffff;
+}
+
+section .con {
+  left: 260px;
+  top: 0;
+  right: 0;
+  transition: 0.6s ease;
+  position: absolute;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+section .con.active {
+  left: 0px;
+}
+
+section .con .topbar {
+  display: flex;
+  height: 48px;
+  background: #202225;
+  align-items: center;
+}
+
+section .con .topbar .btn-menu {
+  margin: 0 15px;
+}
+
+section .con .topbar .btn-menu button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+section .con .topbar .btn-menu button:hover {
+  color: #7289DA;
+}
+
+section .con .topbar .name {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20pt;
+}
+
+section .con .topbar .name img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10pt;
+}
+
+section .con .topbar .name h1 {
+  font-size: 20pt;
+  color: #ffffff;
+}
+
+.login {
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+  left: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .s-menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block !important;
+  }
+
+  .con {
+    left: 0px !important;
+  }
+}/*# sourceMappingURL=nav2.css.map */

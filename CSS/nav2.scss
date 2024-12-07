@@ -1,0 +1,213 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* <i> icon </i> */
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css");
+
+/* reset */
+
+@import "reset.css";
+
+/* scss */
+
+html {
+	font-size: calc(60% + 0.8vmin);
+}
+body {
+	background: #202225;
+}
+section {
+	position: relative;
+	width: 100%;
+	height: auto;
+	nav {
+		position: fixed;
+		z-index: 99;
+		width: 260px;
+		height: 100vh;
+		background: #202225;
+		transition: 0.6s ease;
+		font-family: "Poppins", Helvetica, sans-serif;
+		.profile {
+			display: flex;
+			padding: 15px 7px;
+			img {
+				display: block;
+				width: 80px;
+				height: 100px;
+				border: 1px solid #ffffff;
+				border-radius: 5px;
+				box-shadow: 1px 1px 2px 0 #bdbdbd;
+			}
+			.title {
+				padding-left: 10pt;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				h1 {
+					color: #ffffff;
+					font-size: 13pt;
+				}
+				.point {
+					margin-top: 10px;
+					p {
+						display: inline-block;
+						color: #d6d6d6;
+					}
+				}
+			}
+		}
+		.s-menu {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			display: none;
+			button {
+				background: none;
+				color: #ffffff;
+				border: none;
+				font-size: 1.3em;
+			}
+		}
+		.menu {
+			padding: 0 15px;
+			ul {
+				padding: 10px 0;
+				h1 {
+					color: #ff8383;
+					padding-bottom: 10px;
+				}
+				a {
+					text-decoration: none;
+					color: #ffffff;
+					font-size: 15px;
+					li {
+						position: relative;
+						padding: 10px 15px;
+						width: 100%;
+						border-radius: 5px;
+						transition: 0.266s ease;
+						&:hover {
+							background: #3b4148;
+						}
+						p {
+							position: absolute;
+							right: 15px;
+							top: 50%;
+							transform: translateY(-50%);
+						}
+					}
+					li.hold {
+						background: #3B4148;
+					}
+				}
+			}
+			ul.secondary {
+				a {
+					li {
+						&:hover {
+							background: none;
+						}
+					}
+				}
+			}
+			ul.main {
+				border-bottom: 1px solid #ffffff;
+			}
+		}
+        .signin {
+            padding: 15px;
+            h3 {
+                color: #ff8383;
+				padding-bottom: 10px;
+            }
+            ul {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    color: #ffffff;
+                    font-size: 14px;
+                    border-radius: 1em;
+                    background: #2e3338;
+                    padding: 0.6em 0.7em;
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
+            }
+        }
+	}
+	nav.active {
+		transform: translateX(-100%);
+	}
+	.con {
+		left: 260px;
+		top: 0;
+		right: 0;
+		transition: 0.6s ease;
+		position: absolute;
+		font-family: "Poppins", Helvetica, sans-serif;
+		.topbar {
+			display: flex;
+			height: 48px;
+			background: #202225;
+			align-items: center;
+			.btn-menu {
+				margin: 0 15px;
+				button {
+					background: none;
+					border: none;
+					color: #ffffff;
+					font-size: 30px;
+					cursor: pointer;
+					transition: 0.3s ease;
+					&:hover {
+						color: #7289DA;
+					}
+				}
+			}
+			.name {
+				display: flex;
+				align-items: center;
+				margin-left: auto;
+				margin-right: 20pt;
+				img {
+					width: 30px;
+					height: 30px;
+					margin-left: 10pt;
+				}
+				h1 {
+					font-size: 20pt;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+	.con.active {
+		left: 0px;
+	}
+}
+.login {
+	position: absolute;
+	bottom: 30px;
+	right: 15px;
+	left: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+	.s-menu {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		display: block !important;
+	}
+	.con {
+		left: 0px !important;
+	}
+}

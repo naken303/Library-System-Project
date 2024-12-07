@@ -1,0 +1,224 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* scrollbar */
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #999999;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #616161;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #a50000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+}
+
+.main-content {
+  padding: 20px;
+  background: #36393F;
+  border-radius: 15px;
+  margin-right: 1em;
+  min-height: 90vh;
+}
+
+body {
+  background: #36393F !important;
+}
+
+.booking {
+  padding: 2em;
+  background: #202225;
+  margin: 2em 1em;
+  border-radius: 15px;
+}
+.booking .head {
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-size: 21px;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.booking .flex-r {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.booking .flex-r .flex-c {
+  display: flex;
+  padding-right: 25px;
+  width: 100%;
+  max-height: 550px;
+  overflow-y: scroll;
+  background: #2F3136;
+  padding: 1em;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+.booking .flex-r .flex-c .box-t {
+  flex: 0 0 31.599%;
+  max-width: 31.599%;
+  border-radius: 45px;
+  margin: 0.7%;
+  background: #454953;
+  border: 2px outset #a1a1a128;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.booking .flex-r .flex-c .box-t h1 {
+  color: #ffffff;
+  font-size: 20px;
+}
+.booking .flex-r .flex-c .box-t:hover {
+  background: #727272;
+}
+.booking .flex-r .flex-c .box-t:active {
+  background: #3d3d3d;
+  border-style: inset;
+}
+.booking .flex-r .flex-c .box-t.hold {
+  background: #5e6370;
+}
+.booking .flex-r .flex-c::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: none;
+}
+.booking .flex-r .flex-c::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+.booking .flex-r .flex-c::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.booking .flex-r .flex-c::-webkit-scrollbar-thumb:hover {
+  background-color: transparent;
+}
+.booking .flex-r .tent-info {
+  padding: 2em;
+  width: 100%;
+  border-radius: 15px;
+  background: #2F3136;
+  margin-top: 2em;
+}
+.booking .flex-r .tent-info .f-info {
+  display: flex;
+}
+.booking .flex-r .tent-info .f-info .i-img {
+  padding-right: 2em;
+}
+.booking .flex-r .tent-info .f-info .i-img img {
+  max-width: 280px;
+  max-height: 450px;
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 1px 2px 5px #8b8b8b;
+  border: 1px solid #d4d4d4;
+  border-radius: 15px;
+}
+.booking .flex-r .tent-info .i-text ul span.red {
+  color: #ff5353;
+}
+.booking .flex-r .tent-info .i-text ul li {
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-size: 18px;
+}
+.booking .flex-r .tent-info .i-text .bas {
+  max-height: 250px;
+  overflow-y: scroll;
+  padding-right: 20px;
+}
+.booking .flex-r .tent-info .i-text .bas p {
+  color: #d4d4d4;
+  line-height: 1.4;
+}
+.booking .flex-r .tent-info .i-text .bas::-webkit-scrollbar-track {
+  background-color: #2A2C31;
+  border: none;
+}
+.booking .flex-r .tent-info .i-text .bas::-webkit-scrollbar {
+  width: 7px;
+  background-color: #999999;
+}
+.booking .flex-r .tent-info .i-text .bas::-webkit-scrollbar-thumb {
+  background-color: #d8d8d8;
+  border-radius: 4rem;
+}
+.booking .flex-r .tent-info .i-text .bas::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
+}/*# sourceMappingURL=booking.css.map */

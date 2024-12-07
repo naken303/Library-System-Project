@@ -1,0 +1,23 @@
+@import 'reset';
+
+.outBox { position: relative; width: 100%; height: auto; font-family: 'Prompt', sans-serif; 
+    
+    .dataBox { border-radius: 15px 15px 0 0; margin-right: 15px; padding: 15pt; background: #36393F; height: 100%; color: white; width: 100%;
+        .topData {display: flex; 
+            .fourthBox {width: 100%; padding: 20px; position: relative; background: #484c55; margin: 0 20px; height: 100pt; border-radius: 1em;
+                p {font-size: 20px; }
+                h1 {font-size: 50px; position: absolute; bottom: 15px; right: 20px;}
+                p,h1 {color: #ffffff;}
+            }
+        }
+        .mydata {padding: 2em; border-radius: 15px; background: #484c55; margin: 1.5em;
+            table { tr{
+                td{text-align: center; 
+                    font-size: 21px;
+                    &#depart{ text-align: left!important;}
+                }
+                }
+            }
+        }
+    }
+}
