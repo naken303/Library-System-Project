@@ -1,5 +1,5 @@
-# My Vocational College Final Project 2022
-This project is developed by using PHP and MySQL.
+# My Vocational College Final Project 2021
+This is my first full systems project on vocational collage and developed by using PHP and MySQL.
 ## Requirement
 I got Requirement Specification from Librarian of Surratthani Vocational Collage.
 ## What did I learn from this project
